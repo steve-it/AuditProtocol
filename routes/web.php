@@ -12,5 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome2');
+    return view('welcome');
 });
+
+
+// Route ressources protocols
+Route::resource('Protocoles','ProtocolesController');
+Route::get('/Protocoles', 'ProtocolesController@index');
+//Fin
+
